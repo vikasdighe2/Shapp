@@ -1,0 +1,411 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:background="@color/PAGE_BACKGROUND_COLOR">
+    <RelativeLayout
+        android:id="@+id/profile_page_header"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/NAV_BAR_COLOR">
+        <ImageView
+            android:id="@+id/productdetails_page_close_image"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/back_icon"
+            android:layout_margin="10dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"/>
+
+
+        <TextView
+            android:id="@+id/bidding_page_header_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="My Profile"
+            android:layout_centerInParent="true"
+            android:textColor="@color/WHITE_COLOR"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/WHITE_COLOR">
+
+        <com.eysa.shapp.BounceScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:focusable="false"
+                android:focusableInTouchMode="true">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:background="@color/CARD_DESC_BACKGROUND">
+                <com.eysa.shapp.CircleImageView
+                    android:id="@+id/profile_picture"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="20dp"
+                    android:src="@drawable/blank_avatar"
+                    android:background="@drawable/rounded_image_mask"
+                    android:layout_gravity="left" />
+
+                <RelativeLayout
+                    android:id="@+id/propic_loading_block"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="-85dp"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:id="@+id/propic_loading_spinner"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/progress_loader"/>
+
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/user_name_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textStyle="bold"
+                    android:textColor="@color/PINK_COLOR"
+                    android:textSize="15sp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_gravity="center"/>
+                </LinearLayout>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/information"
+                    android:textStyle="bold"
+                    android:textColor="@color/PINK_COLOR"
+                    android:textSize="15sp"
+                    android:padding="15dp" />
+
+
+                <EditText
+                    android:id="@+id/user_fname_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPersonName"
+                    android:textSize="15sp"
+                    android:hint="@string/firstname"
+                    android:padding="10dp"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/settings_textfield"/>
+
+
+                <EditText
+                    android:id="@+id/user_lname_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPersonName"
+                    android:textSize="15sp"
+                    android:hint="@string/lastname"
+                    android:padding="10dp"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/settings_textfield"/>
+
+
+                <EditText
+                    android:id="@+id/user_email_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textEmailAddress"
+                    android:textSize="15sp"
+                    android:hint="@string/email"
+                    android:padding="10dp"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/settings_textfield"/>
+
+
+                <EditText
+                    android:id="@+id/user_phone_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="phone"
+                    android:textSize="15sp"
+                    android:hint="@string/contact_number"
+                    android:padding="10dp"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/settings_textfield"/>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Security"
+                    android:textStyle="bold"
+                    android:textColor="@color/PINK_COLOR"
+                    android:textSize="15sp"
+                    android:padding="15dp" />
+
+
+                <EditText
+                    android:id="@+id/user_password_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPassword"
+                    android:textSize="15sp"
+                    android:hint="@string/current_password"
+                    android:padding="10dp"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/settings_textfield"/>
+
+
+                <EditText
+                    android:id="@+id/user_newpassword_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPassword"
+                    android:textSize="15sp"
+                    android:hint="@string/new_password"
+                    android:padding="10dp"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/settings_textfield"/>
+
+                <RelativeLayout
+                    android:id="@+id/confirm_password_block"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                    <EditText
+                        android:id="@+id/user_confirm_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textPassword"
+                        android:textSize="15sp"
+                        android:hint="@string/confirm_new_password"
+                        android:padding="10dp"
+                        android:layout_margin="5dp"
+                        android:background="@drawable/settings_textfield"/>
+
+                    <ImageView
+                        android:id="@+id/confirmpassword_field_next_image"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:src="@drawable/rounded_next_image"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:visibility="invisible"/>
+
+                </RelativeLayout>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/location"
+                    android:textStyle="bold"
+                    android:textColor="@color/PINK_COLOR"
+                    android:textSize="15sp"
+                    android:padding="15dp" />
+
+
+                <EditText
+                    android:id="@+id/user_country_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textCapWords"
+                    android:textSize="15sp"
+                    android:hint="@string/country"
+                    android:padding="10dp"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/settings_textfield"/>
+
+                <LinearLayout
+                    android:id="@+id/country_list_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:orientation="vertical">
+
+                </LinearLayout>
+
+
+
+                <EditText
+                    android:id="@+id/user_state_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textCapWords"
+                    android:textSize="15sp"
+                    android:hint="@string/state"
+                    android:padding="10dp"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/settings_textfield"/>
+
+                <LinearLayout
+                    android:id="@+id/state_list_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:orientation="vertical">
+
+                </LinearLayout>
+
+
+
+
+                <EditText
+                    android:id="@+id/user_city_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textCapWords"
+                    android:textSize="15sp"
+                    android:hint="@string/city"
+                    android:padding="10dp"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/settings_textfield"/>
+
+                <LinearLayout
+                    android:id="@+id/city_list_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:orientation="vertical">
+
+                </LinearLayout>
+
+
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/account_settings"
+                    android:textStyle="bold"
+                    android:textColor="@color/PINK_COLOR"
+                    android:textSize="15sp"
+                    android:padding="15dp" />
+
+
+                <RelativeLayout
+                    android:id="@+id/send_push_button_row"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="1dp">
+
+                    <TextView
+                        android:id="@+id/send_push_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/send_push_notifications"
+                        android:textSize="15sp"
+                        android:padding="15dp" />
+
+                    <Switch
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/send_push_switch"
+                        android:showText="false"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:textSize="12sp"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentEnd="true"
+                        android:theme="@style/AppTheme"
+                        android:layout_centerVertical="true"
+                        />
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/auto_refresh_button_row"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="1dp">
+
+                    <TextView
+                        android:id="@+id/auto_refresh_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/refresh_automatically"
+                        android:textSize="15sp"
+                        android:padding="15dp"
+                        />
+
+                    <Switch
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/auto_refresh_switch"
+                        android:showText="false"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:textSize="12sp"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentEnd="true"
+                        android:theme="@style/AppTheme"
+                        android:layout_centerVertical="true"
+                        />
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/send_email_button_row"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="1dp">
+
+                    <TextView
+                        android:id="@+id/send_email_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/send_email_notifications"
+                        android:textSize="15sp"
+                        android:padding="15dp"
+                        />
+
+                    <Switch
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/send_email_switch"
+                        android:showText="false"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:textSize="12sp"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentEnd="true"
+                        android:theme="@style/AppTheme"
+                        android:layout_centerVertical="true"
+                        />
+                </RelativeLayout>
+
+
+
+                <TextView
+                    android:id="@+id/user_delete_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Delete Account"
+                    android:textColor="@color/MASTER_COLOR"
+                    android:textSize="15sp"
+                    android:padding="15dp" />
+
+
+            </LinearLayout>
+
+
+        </com.eysa.shapp.BounceScrollView>
+
+    </RelativeLayout>
+
+</LinearLayout>

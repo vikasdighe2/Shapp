@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/WHITE_COLOR">
+
+
+
+    <FrameLayout
+        android:id="@+id/discover_item_block"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/white_button">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/white_button">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:orientation="vertical"
+                android:layout_weight="9.5">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/discover_item_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/blank_image"/>
+
+                <Button
+                    android:visibility="gone"
+                    android:id="@+id/bid_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/bid_closed"
+                    android:textAllCaps="false"
+                    android:background="@drawable/active_btn_filled"
+                    android:layout_margin="10dp"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:layout_alignParentEnd="true" />
+
+                <View
+                    android:id="@+id/onClickMethod"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:alpha="0"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"/>
+
+                <View
+                    android:id="@+id/down_view"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:alpha="0"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/favorite"
+                    android:layout_below="@+id/bid_button"
+                    android:layout_centerHorizontal="true" />
+
+            </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            android:layout_weight="0.5">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/CARD_DESC_BACKGROUND">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingLeft="5dp">
+                        <TextView
+                            android:id="@+id/discover_item_name_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textStyle="bold"
+                            android:layout_gravity="center_vertical"
+                            android:textColor="@color/tinder_page_text_color"
+                            android:text="Item Name"
+                            android:textSize="15sp"/>
+                        <TextView
+                            android:id="@+id/discover_item_km"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:textColor="@color/tinder_page_text_color"
+                            android:textSize="12sp"/>
+                        <TextView
+                            android:id="@+id/discover_item_location"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:textColor="@color/tinder_page_text_color"
+                            android:text="location"
+                            android:textSize="12sp"/>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/buy_now_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginTop="10dp"
+                        android:padding="5dp"
+                        android:layout_alignParentEnd="true"
+                        android:background="@drawable/rounded_corner_box_bid_button"
+                        android:layout_marginRight="10dp">
+
+                        <TextView
+                            android:id="@+id/buynow_value_text"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_horizontal"
+                            android:text="2000"
+                            android:textColor="@color/WHITE_COLOR"/>
+
+                        <TextView
+                            android:id="@+id/buynow_text"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_horizontal"
+                            android:textSize="12sp"
+                            android:text="@string/buy_now_price"
+                            android:textColor="@color/WHITE_COLOR"/>
+                    </LinearLayout>
+            </RelativeLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@color/CARD_DESC_BACKGROUND">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="@color/WHITE_COLOR"
+                    android:layout_margin="5dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/CARD_DESC_BACKGROUND"
+                        android:layout_marginTop="1dp">
+
+                        <TableLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="3dp">
+
+
+                            <TableRow
+                                android:gravity="center_horizontal|center_vertical"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                >
+
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:orientation="vertical"
+                                    android:layout_weight="0.33"
+                                    >
+
+                                    <TextView
+                                        android:id="@+id/minprice_amount_text"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="center_horizontal"
+                                        android:text="1000.00 Kr"
+                                        android:textColor="@color/tinder_page_text_color"/>
+
+                                    <TextView
+                                        android:id="@+id/minprice_text"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="center_horizontal"
+                                        android:textSize="11sp"
+                                        android:text="@string/min_price"
+                                        android:textColor="@color/tinder_page_text_color"/>
+                                </LinearLayout>
+                                <LinearLayout
+                                    android:background="@color/WHITE_COLOR"
+                                    android:layout_height="match_parent"
+                                    android:layout_width="1dp"/>
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:orientation="vertical"
+                                    android:layout_weight="0.34"
+                                    android:layout_marginLeft="1dp">
+
+                                    <TextView
+                                        android:id="@+id/latestbid_amount_text"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="center_horizontal"
+                                        android:text="1000.00"
+                                        android:textColor="@color/tinder_page_text_color"/>
+
+                                    <TextView
+                                        android:id="@+id/latestbid_text"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="center_horizontal"
+                                        android:textSize="11sp"
+                                        android:text="@string/latest_bid"
+                                        android:textColor="@color/tinder_page_text_color"/>
+                                </LinearLayout>
+                                <LinearLayout
+                                    android:background="@color/WHITE_COLOR"
+                                    android:layout_height="match_parent"
+                                    android:layout_width="1dp"/>
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical"
+                                    android:layout_weight="0.33"
+                                    android:layout_marginLeft="1dp">
+
+                                    <TextView
+                                        android:id="@+id/timeleft_amount_text"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="center_horizontal"
+                                        android:text="00:00:00"
+                                        android:textColor="@color/tinder_page_text_color"/>
+
+                                    <TextView
+                                        android:id="@+id/timeleft_text"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="center_horizontal"
+                                        android:textSize="11sp"
+                                        android:text="Time Left"
+                                        android:textColor="@color/tinder_page_text_color"/>
+                                </LinearLayout>
+
+
+                            </TableRow>
+
+
+
+                        </TableLayout>
+
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+            <RelativeLayout
+                android:id="@+id/user_profile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@color/CARD_BOTTOM_BACKGROUND"
+                >
+
+
+                <com.eysa.shapp.CircleImageView
+                    android:id="@+id/discover_memberImage"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_margin="5dp"
+                    android:src="@drawable/blank_avatar"
+                    android:background="@drawable/rounded_image_mask_50"
+                    />
+
+                <TextView
+                    android:id="@+id/username_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:layout_toRightOf="@+id/discover_memberImage"
+                    android:text="User name"
+                    android:textSize="15sp"
+                    android:padding="3dp"
+                    android:layout_marginTop="5dp"
+                    android:textColor="@color/WHITE_COLOR"
+                    />
+
+                <TextView
+                    android:id="@+id/user_location_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:layout_toRightOf="@+id/discover_memberImage"
+                    android:layout_below="@+id/username_text"
+                    android:text="Location"
+                    android:textSize="15sp"
+                    android:padding="3dp"
+                    android:textColor="@color/WHITE_COLOR"
+                    />
+                <ImageView
+                    android:visibility="gone"
+                    android:id="@+id/verified_icon"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_margin="5dp"
+                    android:src="@drawable/verified_icon"/>
+                <TextView
+                    android:id="@+id/product_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"/>
+            </RelativeLayout>
+        </LinearLayout>
+
+
+        </LinearLayout>
+        <TextView
+            android:id="@+id/invisibleText"
+            android:layout_width="wrap_content"
+            android:layout_height="1dp" />
+    </FrameLayout>
+    <View
+        android:id="@+id/item_swipe_left_indicator"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:alpha="0"
+
+        android:background="@drawable/right" />
+
+    <View
+        android:id="@+id/item_swipe_right_indicator"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_gravity="right"
+        android:alpha="0"
+
+
+        android:background="@drawable/close_discover" />
+</FrameLayout>

@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/WHITE_COLOR">
+
+
+
+    <RelativeLayout
+        android:id="@+id/follower_details_page_header"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/NAV_BAR_COLOR">
+
+        <ImageView
+            android:id="@+id/follower_details_page_close_image"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/back_icon"
+            android:layout_margin="10dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"/>
+
+
+        <TextView
+            android:id="@+id/follower_details_page_header_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="Group Name"
+            android:layout_centerInParent="true"
+            android:textColor="@color/WHITE_COLOR"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:paddingTop="20dp"
+        >
+        <ImageView
+            android:id="@+id/contact"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:background="@drawable/follow_icon"
+            android:layout_gravity="center"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_alignTop="@+id/message"
+            android:layout_alignParentStart="true" />
+        <com.eysa.shapp.CircleImageView
+            android:id="@+id/follower_image"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/app_icon"
+            android:background="@drawable/rounded_image_mask"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_alignTop="@+id/contact"
+            android:layout_centerHorizontal="true" />
+        <ImageView
+            android:id="@+id/message"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:background="@drawable/chat"
+            android:layout_gravity="center"
+            android:layout_marginRight="10dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/follower_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="Sagar Nawale"
+        android:textStyle="bold"
+        android:textColor="@color/TEXT_FIELD_BORDER"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal" />
+
+    <TextView
+        android:id="@+id/follower_location_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:text="Location"
+        android:textColor="@color/TEXT_FIELD_BORDER"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        />
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+
+            <TableRow
+                android:gravity="center_horizontal|center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="0.33"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="3dp"
+                    android:layout_marginLeft="1dp"
+                    >
+
+                    <TextView
+                        android:id="@+id/rating_count_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:text="0"
+                        android:textColor="@color/TEXT_FIELD_BORDER"/>
+
+                    <TextView
+                        android:id="@+id/rating_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:textSize="11sp"
+                        android:text="ratings"
+                        android:textColor="@color/TEXT_FIELD_BORDER"/>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="0.33"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="3dp"
+                    >
+
+                    <TextView
+                        android:id="@+id/pro_count_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:text="0"
+                        android:textColor="@color/TEXT_FIELD_BORDER"/>
+
+                    <TextView
+                        android:id="@+id/products_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:textSize="11sp"
+                        android:text="Products"
+                        android:textColor="@color/TEXT_FIELD_BORDER"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="0.33"
+                    android:paddingTop="5dp"
+                    android:layout_marginLeft="1dp"
+                    android:paddingBottom="3dp"
+                    >
+
+                    <TextView
+                        android:id="@+id/follower_count_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:text="0"
+                        android:textColor="@color/TEXT_FIELD_BORDER"/>
+
+                    <TextView
+                        android:id="@+id/followers_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:textSize="11sp"
+                        android:text="Followers"
+                        android:textColor="@color/TEXT_FIELD_BORDER"/>
+                </LinearLayout>
+
+
+            </TableRow>
+
+
+
+        </TableLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/TEXT_FIELD_BORDER">
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/WHITE_COLOR">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginBottom="1dp"
+            android:background="@color/WHITE_COLOR">
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/WHITE_COLOR">
+
+
+                <TableRow
+                    android:gravity="center_horizontal|center_vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_weight="0.33"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="3dp"
+                        android:background="@color/WHITE_COLOR">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_horizontal"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            android:text="To Sell"
+                            android:textColor="@color/TEXT_FIELD_BORDER"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/TEXT_FIELD_BORDER">
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_weight="0.33"
+                        android:paddingTop="5dp"
+                        android:layout_marginLeft="1dp"
+                        android:paddingBottom="3dp"
+                        android:background="@color/WHITE_COLOR"
+                        >
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_horizontal"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            android:text="Sold"
+                            android:textColor="@color/TEXT_FIELD_BORDER"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/TEXT_FIELD_BORDER">
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_weight="0.33"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="3dp"
+                        android:layout_marginLeft="1dp"
+                        android:background="@color/WHITE_COLOR"
+                        >
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_horizontal"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            android:text="Groups"
+                            android:textColor="@color/TEXT_FIELD_BORDER"/>
+                    </LinearLayout>
+
+
+                </TableRow>
+
+
+
+            </TableLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/TEXT_FIELD_BORDER">
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+       <GridView
+           android:id="@+id/grid_view"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:numColumns="2"
+           android:padding="5dp"
+           android:scrollbars="vertical"
+           android:verticalSpacing="3dp"
+           android:horizontalSpacing="3dp">
+       </GridView>
+    </LinearLayout>
+
+</LinearLayout>

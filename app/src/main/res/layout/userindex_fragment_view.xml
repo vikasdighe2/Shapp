@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/PAGE_BACKGROUND_COLOR"
+    android:clickable="true">
+
+
+    <RelativeLayout
+        android:id="@+id/uesrindex_page_header"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/NAV_BAR_COLOR">
+
+        <ImageView
+            android:id="@+id/left_drawer_control_button"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/list_icon"
+            android:layout_margin="10dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:onClick="btn_load_leftdrawer"/>
+
+
+        <ImageView
+            android:id="@+id/userindex_page_header_image"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/header_logo"/>
+    </RelativeLayout>
+
+
+
+
+
+        <RelativeLayout
+            android:id="@+id/discover_row_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+
+
+        </RelativeLayout>
+
+
+
+</LinearLayout>

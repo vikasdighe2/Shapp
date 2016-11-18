@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true">
+
+    <com.eysa.shapp.BounceScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/discover_login_back">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_vertical">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="CREATE YOUR ACCOUNT"
+                    android:textSize="25sp"
+                    android:textColor="@color/BLACK_COLOR"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="20dp"
+                    android:textIsSelectable="false"
+                    android:visibility="gone"/>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    >
+                    <ImageView
+                        android:layout_width="190dp"
+                        android:layout_height="199dp"
+                        android:id="@+id/new_pro_pic"
+                        android:src="@drawable/header_logo"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true" />
+                    <ImageView
+                        android:id="@+id/register_back_image"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/close_button"
+                        android:layout_marginTop="20dp"
+                        android:tint="@color/WHITE_COLOR"
+                        android:layout_marginLeft="300dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentEnd="true" />
+
+                </RelativeLayout>
+
+
+                <EditText
+                    android:id="@+id/enter_fname"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:inputType="textPersonName"
+                    android:textSize="15sp"
+                    android:textColor="@color/WHITE_COLOR"
+                    android:textColorHint="@color/WHITE_COLOR"
+                    android:hint="@string/firstname"
+                    android:padding="10dp"
+                    android:layout_margin="10dp"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center_horizontal"
+                    android:background="@drawable/reg_textfield"
+                    />
+
+
+                <EditText
+                    android:id="@+id/enter_lname"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:inputType="textPersonName"
+                    android:textSize="15sp"
+                    android:textColor="@color/WHITE_COLOR"
+                    android:textColorHint="@color/WHITE_COLOR"
+                    android:hint="@string/lastname"
+                    android:padding="10dp"
+                    android:layout_margin="10dp"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center_horizontal"
+                   android:background="@drawable/reg_textfield"/>
+
+
+                <EditText
+                    android:id="@+id/enter_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:inputType="textEmailAddress"
+                    android:textSize="15sp"
+                    android:textColor="@color/WHITE_COLOR"
+                    android:textColorHint="@color/WHITE_COLOR"
+                    android:hint="@string/email"
+                    android:padding="10dp"
+                    android:layout_margin="10dp"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center_horizontal"
+                    android:background="@drawable/reg_textfield"/>
+
+
+                <EditText
+                    android:id="@+id/enter_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:inputType="textPassword"
+                    android:textSize="15sp"
+                    android:textColor="@color/WHITE_COLOR"
+                    android:textColorHint="@color/WHITE_COLOR"
+                    android:hint="@string/password"
+                    android:padding="10dp"
+                    android:layout_margin="10dp"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center_horizontal"
+                    android:background="@drawable/reg_textfield"/>
+
+                <EditText
+                    android:id="@+id/confirm_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:inputType="textPassword"
+                    android:textSize="15sp"
+                    android:textColor="@color/WHITE_COLOR"
+                    android:textColorHint="@color/WHITE_COLOR"
+                    android:hint="@string/confirm_password"
+                    android:padding="10dp"
+                    android:layout_margin="10dp"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center_horizontal"
+                    android:background="@drawable/reg_textfield"/>
+               <!-- <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:inputType="textEmailAddress"
+                    android:ems="10"
+                    android:id="@+id/enter_email"
+                    android:textAlignment="center"
+                    android:hint="Email Address"
+                    android:background="#F3F3F3"
+                    android:fontFamily="verdena"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:shadowRadius="60"
+                    android:layout_marginBottom="10dp"/>
+
+
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:inputType="textPassword"
+                    android:ems="10"
+                    android:id="@+id/enter_password"
+                    android:textAlignment="center"
+                    android:hint="Password"
+                    android:background="#F3F3F3"
+                    android:fontFamily="verdena"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:shadowRadius="60"
+                    android:layout_marginBottom="10dp"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:inputType="textPassword"
+                    android:ems="10"
+                    android:id="@+id/confirm_password"
+                    android:textAlignment="center"
+                    android:hint="Password Confirmation"
+                    android:background="#F3F3F3"
+                    android:fontFamily="verdena"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:shadowRadius="60"/>
+
+
+                <TextView
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:text="You further agree to comply with supplemental terms and conditions set forth in this agreement."
+                    android:textSize="15sp"
+                    android:textColor="@color/BLACK_COLOR"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="20dp"
+                    android:textIsSelectable="false"
+                    android:textAlignment="center" />
+
+-->
+
+                <Button
+                    android:id="@+id/register_button"
+                    android:layout_width="200dp"
+                    android:layout_height="45dp"
+                    android:text="@string/register"
+                    android:textSize="15sp"
+                    android:textColor="@color/CARD_BOTTOM_BACKGROUND"
+                    android:padding="12dp"
+                    android:background="@drawable/reg_inactive_btn_filled"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginBottom="50dp"/>
+
+
+            </LinearLayout>
+        </LinearLayout>
+    </com.eysa.shapp.BounceScrollView>
+
+
+</LinearLayout>

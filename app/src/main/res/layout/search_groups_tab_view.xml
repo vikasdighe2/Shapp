@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="10dp"
+        android:background="@drawable/rounded_corner_box_product">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@color/CARD_DESC_BACKGROUND">
+
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <TableRow
+                    android:gravity="center_horizontal|center_vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/MASTER_COLOR_DARK">
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_weight="0.50"
+                        android:padding="3dp">
+                        <TextView
+                            android:id="@+id/group_time_text"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="end"
+                            android:textSize="15sp"
+                            android:textColor="@color/WHITE_COLOR"
+                            android:text="Developer Account"
+                            android:layout_marginLeft="10dp" />
+
+                        <TextView
+                            android:id="@+id/group_name_text"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="15sp"
+                            android:textStyle="bold"
+                            android:text="Group Name 1"
+                            android:textColor="@color/WHITE_COLOR"
+                            android:layout_margin="10dp" />
+                    </LinearLayout>
+                </TableRow>
+            </TableLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:background="@color/CARD_BOTTOM_BACKGROUND">
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/WHITE_COLOR">
+
+
+                <TableRow
+                    android:gravity="center_horizontal|center_vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_weight="0.33"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="3dp"
+                        android:background="@color/CARD_BOTTOM_BACKGROUND">
+
+                        <TextView
+                            android:id="@+id/pro_count_text"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_horizontal"
+                            android:text="0"
+                            android:textColor="@color/WHITE_COLOR"/>
+
+                        <TextView
+                            android:id="@+id/products_text"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_horizontal"
+                            android:textSize="11sp"
+                            android:text="Products"
+                            android:textColor="@color/WHITE_COLOR"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_weight="0.33"
+                        android:paddingTop="5dp"
+                        android:layout_marginLeft="1dp"
+                        android:paddingBottom="3dp"
+                        android:background="@color/CARD_BOTTOM_BACKGROUND"
+                        >
+
+                        <TextView
+                            android:id="@+id/mem_count_text"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_horizontal"
+                            android:text="0"
+                            android:textColor="@color/WHITE_COLOR"/>
+
+                        <TextView
+                            android:id="@+id/members_text"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_horizontal"
+                            android:textSize="11sp"
+                            android:text="Members"
+                            android:textColor="@color/WHITE_COLOR"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_weight="0.33"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="3dp"
+                        android:layout_marginLeft="1dp"
+                        android:background="@color/CARD_BOTTOM_BACKGROUND"
+                        >
+
+                        <TextView
+                            android:id="@+id/follow_count_count"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_horizontal"
+                            android:text="0"
+                            android:textColor="@color/WHITE_COLOR"/>
+
+                        <TextView
+                            android:id="@+id/followers_text"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_horizontal"
+                            android:textSize="11sp"
+                            android:text="Followers"
+                            android:textColor="@color/WHITE_COLOR"/>
+                    </LinearLayout>
+
+
+                </TableRow>
+
+
+
+            </TableLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

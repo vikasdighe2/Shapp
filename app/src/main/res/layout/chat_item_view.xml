@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="10dp"
+        android:background="@drawable/rounded_corner_box_product">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@color/WHITE_COLOR">
+
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <TableRow
+                    android:gravity="center_horizontal|center_vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/WHITE_COLOR">
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_weight="0.50"
+                        android:layout_marginTop="5dp"
+                        android:padding="3dp">
+                        <com.eysa.shapp.CircleImageView
+                            android:id="@+id/rating_pro_image"
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:src="@drawable/blank_image"
+                            android:background="@drawable/rounded_image_mask"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_margin="10dp"/>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+                        <TextView
+                            android:id="@+id/product_name_text"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="15sp"
+                            android:textStyle="bold"
+                            android:text="Name"
+                            android:textColor="@color/BLACK_COLOR" />
+                            <TextView
+                                android:id="@+id/user_name"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textStyle="bold"
+                                android:text="Name"
+                                android:textColor="@color/MASTER_COLOR" />
+                            <TextView
+                                android:id="@+id/location"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textSize="15sp"
+                                android:text="Name"
+                                android:textColor="@color/MASTER_COLOR" />
+                            <TextView
+                                android:id="@+id/status"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textSize="15sp"
+                                android:text="Name"
+                                android:textColor="@color/Red_color" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </TableRow>
+            </TableLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

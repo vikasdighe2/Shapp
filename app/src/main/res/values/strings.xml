@@ -1,0 +1,88 @@
+<resources>
+    <string name="app_name">Shapp</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="facebook_app_id" translatable="false">1057185324360780</string>
+
+    <string name="title_activity_splash">SplashActivity</string>
+    <string name="title_activity_main">MainActivity</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="bid">Bid</string>
+    <string name="buy_now_price">Buy Now Price</string>
+    <string name="notification">Notifications</string>
+    <string name="saved_shapp">Saved Shapps</string>
+    <string name="my_product">My Product</string>
+    <string name="discover">Discover</string>
+    <string name="sell">Sell</string>
+    <string name="chat">Chat</string>
+    <string name="not_ready_to_signup">Not ready to signup. Explore the app</string>
+    <string name="email">E-mail</string>
+    <string name="password">Password</string>
+    <string name="forgot_your_password">Forgot Your Password?</string>
+    <string name="or_sign_in_with_facebook">Or signin with facebook</string>
+    <string name="firstname">First Name</string>
+    <string name="lastname">Last Name</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="register">Register</string>
+    <string name="latest_bid">Latest Bid</string>
+    <string name="total_bid">Total Bid</string>
+    <string name="min_price">Min. Price</string>
+    <string name="information">Information</string>
+    <string name="confirm_new_password">Confirm New Password</string>
+    <string name="new_password">New Password</string>
+    <string name="current_password">Current Password</string>
+    <string name="country">Country</string>
+    <string name="state">State</string>
+    <string name="city">City</string>
+    <string name="account_settings">Account Settings</string>
+    <string name="send_push_notifications">Send Push Notifications</string>
+    <string name="refresh_automatically">Refresh Automatically</string>
+    <string name="send_email_notifications">Send Email Notifications</string>
+    <string name="location">Location</string>
+    <string name="contact_number">Contact Number</string>
+    <string name="product">Product</string>
+    <string name="groups">Groups</string>
+    <string name="people">Peoples</string>
+    <string name="my_bid">My Bids</string>
+    <string name="my_bids">My Bid</string>
+    <string name="my_sales">My Sales</string>
+    <string name="followers">Followers</string>
+    <string name="settings">Settings</string>
+    <string name="help">Help</string>
+    <string name="logout">Logout</string>
+    <string name="bid_closed">Bid Closed</string>
+    <string name="search_products_groups">Search Products and Groups</string>
+    <string name="invite_peoples">Invite Peoples</string>
+    <string name="search_people">Search People</string>
+    <string name="push_notifications">Push Notifications</string>
+    <string name="email_notifications">Email Notifications</string>
+    <string name="members">Members</string>
+    <string name="invite">Invite</string>
+    <string name="edit">Edit</string>
+    <string name="create">Create</string>
+    <string name="upload_picture">Upload Picture</string>
+    <string name="update">Update</string>
+    <string name="next">Next</string>
+    <string name="group_deleted_successfully">Group deleted successfully</string>
+    <string name="do_you_have_bill">Do you have Bill ?</string>
+    <string name="name_of_the_product">Name of the Product</string>
+    <string name="choose_category">Choose category</string>
+    <string name="add_product">Add Product</string>
+    <string name="GPSAlertDialogMessage">Please turn on your location base service.</string>
+    <string name="cancel">Cancel</string>
+    <string name="comments">Comments</string>
+    <string name="are_you_sure_want_to_buy">Are you sure, you want to buy?</string>
+    <string name="admin_will_contact_you">Admin will contact you.</string>
+    <string name="new_product_added_successfully">New Product Added Successfully.</string>
+    <string name="your_bidding_amount_added_successfully">Your Bidding amount Added Successfully.</string>
+    <string name="bidding_should_be_greater_than_latest_bidding_amount">Bidding should be greater than Latest Bidding amount.</string>
+    <string name="bidding_amount_should_be_greater_than_min_amount">Bidding amount should be greater than Min Amount.</string>
+    <string name="bidding_amount_should_be_less_than_buy_now_price">Bidding amount should be less than buy now Price.</string>
+    <string name="tell_us_something_about_product">Tell us something about the product</string>
+    <string name="add_details">Add Details</string>
+
+
+</resources>

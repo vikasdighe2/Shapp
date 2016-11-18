@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Shapp</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="title_activity_splash">SplashActivity</string>
+    <string name="title_activity_main">MainActivity</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="bid">Byd</string>
+    <string name="buy_now_price">Køb nu Pris</string>
+    <string name="notification">Notifikationer</string>
+    <string name="saved_shapp">Saved Shapps</string>
+    <string name="my_product">min Produkt</string>
+    <string name="discover">Opdag</string>
+    <string name="sell">Sælg</string>
+    <string name="chat">Snak</string>
+    <string name="not_ready_to_signup">Udforsk appen? hvis ikke du ønsker at oprette nu. Explore the app</string>
+    <string name="email">E-mail</string>
+    <string name="password">Adgangskode</string>
+    <string name="forgot_your_password">Forgot Your Adgangskode?</string>
+    <string name="or_sign_in_with_facebook">Eller log ind med Facebook</string>
+    <string name="firstname">Fornavn</string>
+    <string name="lastname">Efternavn</string>
+    <string name="confirm_password">Bekræfte adgangskode</string>
+    <string name="register">Opret</string>
+    <string name="latest_bid">Seneste bud</string>
+    <string name="total_bid">Total bud</string>
+    <string name="min_price">Min. Pris</string>
+    <string name="information">Oplysninger</string>
+    <string name="confirm_new_password">Bekræft ny adgangskode</string>
+    <string name="new_password">Ny Adgangskode</string>
+    <string name="current_password">Nuværende Adgangskode</string>
+    <string name="country">Land</string>
+    <string name="state">Stat</string>
+    <string name="city">By</string>
+    <string name="account_settings">Konto Instillinger</string>
+    <string name="send_push_notifications">Modtage Notifikationer</string>
+    <string name="refresh_automatically">Opdater automatisk</string>
+    <string name="send_email_notifications">Modtage E-mail Notifikationer</string>
+    <string name="location">Beliggenhed</string>
+    <string name="contact_number">Telefon Nummer</string>
+    <string name="product">Produkt</string>
+    <string name="groups">Grupper</string>
+    <string name="people">Profiler</string>
+    <string name="my_bid">Mine bud</string>
+    <string name="my_bids">Min Bud</string>
+    <string name="my_sales">Min Salg</string>
+    <string name="followers">Abonnenter</string>
+    <string name="settings">Indstillinger</string>
+    <string name="help">Hjælp</string>
+    <string name="logout">Logout</string>
+    <string name="bid_closed">Bud Closed</string>
+    <string name="search_products_groups">Search Produkter,Grupper and Profiler</string>
+    <string name="invite_peoples">Inviter profil</string>
+    <string name="search_people">Search Profiler</string>
+    <string name="push_notifications">Push meddelelser</string>
+    <string name="email_notifications">E-mail meddelelser</string>
+    <string name="members">Medlemmer</string>
+    <string name="invite">Invitere</string>
+    <string name="edit">Redigere</string>
+    <string name="create">Opret</string>
+    <string name="upload_picture">Upload billede</string>
+    <string name="update">Opdatering</string>
+    <string name="next">Næste</string>
+    <string name="group_deleted_successfully">Gruppe slettet</string>
+    <string name="do_you_have_bill">Har du Bill?</string>
+    <string name="name_of_the_product">Navn på produktet</string>
+    <string name="choose_category">Vælg Kategori</string>
+    <string name="add_product">Tilføj produkt</string>
+    <string name="GPSAlertDialogMessage">Slå din placering basis service.</string>
+    <string name="cancel">Ophæve</string>
+    <string name="comments">Kommentarer</string>
+    <string name="are_you_sure_want_to_buy">Er du sikker på, du ønsker at købe?</string>
+    <string name="admin_will_contact_you">Admin vil kontakte dig.</string>
+    <string name="new_product_added_successfully">New Product tilføjet.</string>
+    <string name="your_bidding_amount_added_successfully">Din Bud beløb tilføjet.</string>
+    <string name="bidding_should_be_greater_than_latest_bidding_amount">Bud skal være større end Latest Bud beløb.</string>
+    <string name="bidding_amount_should_be_greater_than_min_amount">Bud beløb skal være større end min Beløb</string>
+    <string name="bidding_amount_should_be_less_than_buy_now_price">Bud beløb skal være mindre end købe nu Pris</string>
+    <string name="tell_us_something_about_product">Fortæl os noget om produktet</string>
+    <string name="add_details">Tilføj Detaljer</string>
+
+</resources>

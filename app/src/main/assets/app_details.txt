@@ -1,0 +1,152 @@
+/*******************************************************************************************/
+1. MY PROFILE PAGE. (DISPLAY/UPDATE)
+2. ADD PRODUCT FLOWFROM "SHAPP"
+3. BIDDING
+
+
+*. GROUPS.
+
+
+
+/*******************************************************************************************/
+
+
+
+
+Please find attachments for controller and model.
+
+Headers: These are compulsory headers
+
+1. ['HTTP_X_API_KEY']
+2. ['HTTP_X_API_USEREMAIL']
+
+Below are the functions that send data from other models.
+
+1. notification.to_api ->
+
+   def to_api
+        return {
+                    :id => self.id.to_s,
+                    :created_at => self.created_at,
+                    :notification_string => self.notification_string,
+                    :notification_type => self.notification_type
+                }
+    end
+
+
+2. product.to_discover
+
+   def to_discover(user)
+        user_max_bid_on_product = 0.0
+        if user.blank?
+            user_max_bid_on_product = 0.0
+        else
+            user_max_bid_on_product = user.bids.where(:product_id => self.id).count > 0 ? user.bids.where(:product_id => self.id).max(:bid_amount) : 0.0
+        end
+        return {
+                    :id => self.id.to_s,
+                    :product_name => self.product_name,
+                    :uploaded_by_name => self.user.full_name,
+                    :uploaded_by_id => self.user.id.to_s,
+                    :uploaded_in => self.user.my_location,
+                    :uploaded_by_image => self.user.avatar.blank? ? "" : "grid/#{self.user.avatar.url}",
+                    :product_image => "grid/#{self.product_images.first.image_upload.url}",
+                    :product_description => self.product_description,
+                    :bill_included => self.bill_included,
+                    :min_bid_price => self.min_bid_price,
+                    :buy_now_price => self.buy_now_price,
+                    :latest_bid => self.bids.where(:bid_amount.gt => 0.0).count > 0 ? self.bids.max(:bid_amount) : 0,
+                    :views_count => self.product_views.count,
+                    :bids_count => self.bids.where(:bid_amount.gt => 0.0).count,
+                    :comments_count => self.comments.count,
+                    :images => self.product_images.map{|img| "grid/#{img.image_upload.url}"},
+                    :my_bid => user_max_bid_on_product,
+                    :bid_closed => self.bid_closed? == true ? 1 : 0,
+                    :bid_start => self.bid_start.blank? ? "" : self.bid_start,
+                    :bid_end => self.bid_end.blank? ? "" : self.bid_end,
+                }
+    end
+
+
+3. comment.to_api ->
+
+   def to_api
+        return {
+                    :id => self.id.to_s,
+                    :user_name => self.user.full_name,
+                    :user_image => self.user.avatar.blank? ? "" : "grid/#{self.user.avatar.url}",
+                    :created_at => self.created_at,
+                    :user_location => self.user.my_location,
+                    :comment_text => self.comment_text
+                }
+    end
+
+
+4. bid.to_api ->
+
+   def to_api
+        return {
+                    :id => self.id.to_s,
+                    :uploaded_by_name => self.user.full_name,
+                    :uploaded_by_id => self.user.id.to_s,
+                    :uploaded_in => self.user.my_location,
+                    :uploaded_by_image => self.user.avatar.blank? ? "" : "grid/#{self.user.avatar.url}",
+                    :bid_amount => self.bid_amount
+                }
+    end
+
+5. user.to_api ->
+    def to_api
+        search_profile = self.search_profile
+        if search_profile.blank?
+            search_profile = SearchProfile.create(:user => self, :show_all => true, :category => nil, :quality => nil, :radius => 0, :price_range => 0.0)
+        end
+        return {
+            :id => self.id.to_s,
+            :first_name => self.first_name,
+            :last_name => self.last_name,
+            :email_address => self.email_address,
+            :full_name => self.full_name,
+            :push_notification => self.push_notification == true ? 1 : 0,
+            :auto_refresh => self.auto_refresh == true ? 1 : 0,
+            :email_notification => self.email_notification == true ? 1 : 0,
+            :longitude => self.longitude,
+            :latitude => self.latitude,
+            :channel_key => self.channel_key,
+            :api_key => self.api_key,
+            :is_premium => self.is_premium == true ? 1 : 0,
+            :fb_id => self.fb_id,
+            :avatar => self.avatar.blank? ? "" : "grid/#{self.avatar.url}",
+            :phone_number => self.phone_number.blank? ? "" : self.phone_number,
+            :category_id => search_profile.category.blank? ? "" : search_profile.category_id.to_s,
+            :category_name => search_profile.category.blank? ? "" : search_profile.category.name,
+            :quality_id => search_profile.quality.blank? ? "" : search_profile.quality_id.to_s,
+            :quality_name => search_profile.quality.blank? ? "" : search_profile.quality.name,
+            :show_all => search_profile.show_all == true ? 1 : 0,
+            :radius => search_profile.radius,
+            :price_range => search_profile.price_range,
+            :country_id => self.country_id.blank? ? "" : self.country_id.to_s,
+            :country_name => self.country.blank? ? "" : self.country.name,
+            :state_id => self.state_id.blank? ? "" : self.state_id.to_s,
+            :state_name => self.state.blank? ? "" : self.state.name,
+            :city_id => self.city_id.blank? ? "" : self.city_id.to_s,
+            :city_name => self.city.blank? ? "" : self.city.name
+        }
+    end
+
+
+6. user details ->
+      
+def details_to_api(apiuser)
+        return {
+                    :id => self.id.to_s,
+                    :full_name => self.full_name,
+                    :products_count => self.products.count,
+                    :followers_count => self.followers_count,
+                    :following_count => self.followees_count,
+                    :is_following => self.followee_of?(apiuser),
+                    :bids_count => self.bids.map(&:product_id).uniq.count,
+                    :avatar => self.avatar.blank? ? "" : "grid/#{self.avatar.url}",
+                    :products_data => self.products.map{|product| {:product_id => product.id, :product_image => "grid/#{product.product_images.first.image_upload.url}"}}
+                }
+    end

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/PAGE_BACKGROUND_COLOR">
+    <RelativeLayout
+        android:id="@+id/notifications_page_header"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/NAV_BAR_COLOR">
+        <ImageView
+            android:id="@+id/notification_close_image"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/back_icon"
+            android:layout_margin="10dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:visibility="invisible"/>
+        <TextView
+            android:id="@+id/notification_header_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="@string/notification"
+            android:layout_centerInParent="true"
+            android:textColor="@color/WHITE_COLOR"/>
+    </RelativeLayout>
+    <com.eysa.shapp.BounceScrollView
+        android:id="@+id/notiData_scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="50dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <LinearLayout
+                android:id="@+id/notifications_row_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+            </LinearLayout>
+        </LinearLayout>
+    </com.eysa.shapp.BounceScrollView>
+</LinearLayout>

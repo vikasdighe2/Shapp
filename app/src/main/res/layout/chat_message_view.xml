@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/WHITE_COLOR">
+    <RelativeLayout
+        android:id="@+id/comments_page_header"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/NAV_BAR_COLOR">
+
+        <ImageView
+            android:id="@+id/close_image"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/close_new"
+            android:layout_margin="10dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"/>
+
+
+        <TextView
+            android:id="@+id/comment_page_header_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="Chat"
+            android:layout_centerInParent="true"
+            android:textColor="@color/WHITE_COLOR"/>
+
+
+    </RelativeLayout>
+
+
+
+    <com.eysa.shapp.BounceScrollView
+        android:id="@+id/comments_scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/comments_page_header"
+        android:background="@color/WHITE_BACKGROUND"
+        android:layout_above="@+id/comment_send_block">
+        <LinearLayout
+            android:id="@+id/comments_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+        </LinearLayout>
+    </com.eysa.shapp.BounceScrollView>
+
+    <LinearLayout
+        android:id="@+id/comment_send_block"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/WHITE_BACKGROUND"
+        android:layout_alignParentBottom="true">
+
+
+        <EditText
+            android:id="@+id/messege_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:inputType="textMultiLine"
+            android:textSize="15sp"
+            android:maxLines="10"
+            android:lines="2"
+            android:scrollbars="vertical"
+            android:textColor="@color/MASTER_COLOR"
+            android:textColorHint="@color/TEXT_FIELD_BORDER"
+            android:padding="10dp"
+            android:layout_marginTop="1sp"
+            android:background="@drawable/settings_textfield"
+            android:layout_marginRight="50dp" />
+
+
+        <TextView
+            android:id="@+id/send"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:text="Send"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:layout_marginLeft="-70dp"
+            android:layout_gravity="center_vertical" />
+
+    </LinearLayout>
+</RelativeLayout>

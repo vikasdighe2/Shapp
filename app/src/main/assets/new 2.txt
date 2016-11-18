@@ -1,0 +1,124 @@
+{"status":1,
+"message":"Email and password combination is correct",
+"user_data":{
+
+"id":"57946f117368612a58000000",
+"first_name":"amol",
+"last_name":"aher",
+"email_address":"amol@gmail.com",
+"full_name":"Amol Aher",
+"push_notification":0,
+"auto_refresh":0,
+"email_notification":0,
+"longitude":73.769958,
+"latitude":19.950185,
+"channel_key":"Qt-viipiJeoJDFyN3vsmAQ",
+"api_key":"NMhul2bzvPgtK7GflEm93gtt",
+"is_premium":0,
+"fb_id":"",
+"avatar":"grid/uploads/user/avatar/57946f117368612a58000000/upload-image-2016-7-24-3-35.jpeg",
+"phone_number":"",
+"category_id":"",
+"category_name":"",
+"quality_id":"",
+"quality_name":"",
+"show_all":1,
+"radius":0,
+"price_range":0.0,
+"country_id":"",
+"country_name":"",
+"state_id":"",
+"state_name":"","
+city_id":"",
+"city_name":""
+}}
+07-30 10:38:29.939  15051-15051/com.eysa.shapp D/post execute Res﹕ {"status":1,"message":"Email and password combination is correct","user_data":{"id":"57946f117368612a58000000","first_name":"amol","last_name":"aher","email_address":"amol@gmail.com","full_name":"Amol Aher","push_notification":0,"auto_refresh":0,"email_notification":0,"longitude":73.769958,"latitude":19.950185,"channel_key":"Qt-viipiJeoJDFyN3vsmAQ","api_key":"NMhul2bzvPgtK7GflEm93gtt","is_premium":0,"fb_id":"","avatar":"grid\/uploads\/user\/avatar\/57946f117368612a58000000\/upload-image-2016-7-24-3-35.jpeg","phone_number":"","category_id":"","category_name":"","quality_id":"","quality_name":"","show_all":1,"radius":0,"price_range":0,"country_id":"","country_name":"","state_id":"","state_name":"","city_id":"","city_name":""}}
+
+
+
+
+
+{"status":1,"products":[{
+
+"id":"578a8b0e416d6f10610d0000",
+"product_name":"Boss product",
+"uploaded_by_name":"Amol Aher",
+"uploaded_by_id":"57865efa416d6f056c070000",
+"uploaded_in":"",
+"uploaded_by_image":"",
+"user_is_premium":0,
+"product_image":"grid/uploads/product_image/image_upload/578a8b0e416d6f10610e0000/upload-image-2016-7-17-0-59.jpeg",
+"product_description":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+"bill_included":false,
+"min_bid_price":500.0,
+"buy_now_price":900.0,
+"latest_bid":50000.0,
+"views_count":3,
+"bids_count":18,
+"comments_count":1,
+
+"images":["grid/uploads/product_image/image_upload/578a8b0e416d6f10610e0000/upload-image-2016-7-17-0-59.jpeg",
+"grid/uploads/product_image/image_upload/578a8b0f416d6f1061110000/upload-image-2016-7-17-0-59.jpeg",
+"grid/uploads/product_image/image_upload/578a8b0f416d6f1061140000/upload-image-2016-7-17-0-59.jpeg","grid/uploads/product_image/image_upload/578a8b0f416d6f1061170000/upload-image-2016-7-17-0-59.jpeg"],
+
+"my_bid":50000.0,
+"bid_closed":0,
+"bid_start":"",
+"bid_end":"",
+"rated_by_user":1},
+
+
+{"id":"578f88ec416d6f045c010000","product_name":"My Product","uploaded_by_name":"Amol Aher","uploaded_by_id":"57865efa416d6f056c070000","uploaded_in":"","uploaded_by_image":"","user_is_premium":0,"product_image":"grid/uploads/product_image/image_upload/578f88ec416d6f045c020000/upload-image-2016-7-20-19-51.jpeg","product_description":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.","bill_included":false,"min_bid_price":100.0,"buy_now_price":200.0,"latest_bid":0,"views_count":1,"bids_count":0,"comments_count":0,"images":["grid/uploads/product_image/image_upload/578f88ec416d6f045c020000/upload-image-2016-7-20-19-51.jpeg"],"my_bid":0.0,"bid_closed":0,"bid_start":"","bid_end":"","rated_by_user":0},{"id":"57945dbf416d6f0297170000","product_name":"Ample product ","uploaded_by_name":"Amol a Aher","uploaded_by_id":"5773d79c416d6f1e94000000","uploaded_in":"Brazil, America Dourada","uploaded_by_image":"grid/uploads/user/avatar/5773d79c416d6f1e94000000/upload-image-2016-7-21-19-14.jpeg","user_is_premium":0,"product_image":"grid/uploads/product_image/image_upload/57945dbf416d6f0297180000/upload-image-2016-7-24-11-48.jpeg","product_description":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. ","bill_included":true,"min_bid_price":500.0,"buy_now_price":600.0,"latest_bid":100.0,"views_count":0,"bids_count":23,"comments_count":0,"images":["grid/uploads/product_image/image_upload/57945dbf416d6f0297180000/upload-image-2016-7-24-11-48.jpeg","grid/uploads/product_image/image_upload/57945dc0416d6f02971b0000/upload-image-2016-7-24-11-48.jpeg","grid/uploads/product_image/image_upload/57945dc0416d6f02971e0000/upload-image-2016-7-24-11-48.jpeg"],"my_bid":100.0,"bid_closed":1,"bid_start":"2016-07-25T06:18:05.000Z","bid_end":"2016-07-27T06:18:14.000Z","rated_by_user":0}]}
+
+
+ {"status":1,"product":{
+ "id":"579e35147368613986000000",
+ "product_name":"Mac book pro",
+ "uploaded_by_name":"Amol Aher",
+ "uploaded_by_id":"57946f117368612a58000000",
+ "uploaded_in":"India, Nashik",
+ "uploaded_by_image":"grid/uploads/user/avatar/57946f117368612a58000000/upload-image-2016-7-24-3-35.jpeg",
+ "user_is_premium":0,
+ "product_image":"grid/uploads/product_image/image_upload/579e35147368613986010000/upload-image-2016-7-31-13-27.jpeg",
+ "product_description":"MacBook Pro",
+ "bill_included":true,
+ "min_bid_price":100.0,
+ "buy_now_price":150.0,
+ "latest_bid":0,
+ "views_count":0,
+ "bids_count":0,
+ "comments_count":0,
+ "images":["grid/uploads/product_image/image_upload/579e35147368613986010000/upload-image-2016-7-31-13-27.jpeg","grid/uploads/product_image/image_upload/579e35147368613986040000/upload-image-2016-7-31-13-27.jpeg","grid/uploads/product_image/image_upload/579e35147368613986070000/upload-image-2016-7-31-13-27.jpeg","grid/uploads/product_image/image_upload/579e351473686139860a0000/upload-image-2016-7-31-13-27.jpeg","grid/"],"my_bid":0.0,"bid_closed":1,"bid_start":"2016-08-01T17:28:05.000Z","bid_end":"2016-08-03T17:28:08.000Z","rated_by_user":0}}
+ 
+ 
+ 
+ {"status":1,
+ "products":[{
+ "id":"578a8b0e416d6f10610d0000",
+ "product_name":
+ "Boss product","uploaded_by_name":"Amol Aher","uploaded_by_id":"57865efa416d6f056c070000","uploaded_in":"","uploaded_by_image":"","user_is_premium":0,"product_image":"grid/uploads/product_image/image_upload/578a8b0e416d6f10610e0000/upload-image-2016-7-17-0-59.jpeg","product_description":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.","bill_included":false,"min_bid_price":500.0,"buy_now_price":900.0,"latest_bid":50000.0,"views_count":3,"bids_count":18,"comments_count":5,"images":["grid/uploads/product_image/image_upload/578a8b0e416d6f10610e0000/upload-image-2016-7-17-0-59.jpeg","grid/uploads/product_image/image_upload/578a8b0f416d6f1061110000/upload-image-2016-7-17-0-59.jpeg","grid/uploads/product_image/image_upload/578a8b0f416d6f1061140000/upload-image-2016-7-17-0-59.jpeg","grid/uploads/product_image/image_upload/578a8b0f416d6f1061170000/upload-image-2016-7-17-0-59.jpeg"],"my_bid":50000.0,"bid_closed":1,"bid_start":"","bid_end":"","rated_by_user":1,"ratings":0.0},{"id":"578f88ec416d6f045c010000","product_name":"My Product","uploaded_by_name":"Amol Aher","uploaded_by_id":"57865efa416d6f056c070000","uploaded_in":"","uploaded_by_image":"","user_is_premium":0,"product_image":"grid/uploads/product_image/image_upload/578f88ec416d6f045c020000/upload-image-2016-7-20-19-51.jpeg","product_description":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.","bill_included":false,"min_bid_price":100.0,"buy_now_price":200.0,"latest_bid":0,"views_count":1,"bids_count":0,"comments_count":0,"images":["grid/uploads/product_image/image_upload/578f88ec416d6f045c020000/upload-image-2016-7-20-19-51.jpeg"],"my_bid":0.0,"bid_closed":1,"bid_start":"","bid_end":"","rated_by_user":0,"ratings":0},{"id":"578fb01b416d6f045c070000","product_name":"Mac product","uploaded_by_name":"Amol Aher","uploaded_by_id":"57865efa416d6f056c070000","uploaded_in":"","uploaded_by_image":"","user_is_premium":0,"product_image":"grid/uploads/product_image/image_upload/578fb01b416d6f045c080000/upload-image-2016-7-20-22-38.jpeg","product_description":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.","bill_included":false,"min_bid_price":100.0,"buy_now_price":150.0,"latest_bid":0,"views_count":1,"bids_count":0,"comments_count":1,"images":["grid/uploads/product_image/image_upload/578fb01b416d6f045c080000/upload-image-2016-7-20-22-38.jpeg"],"my_bid":0.0,"bid_closed":1,"bid_start":"","bid_end":"","rated_by_user":0,"ratings":0},{"id":"5793cc88416d6f31ad000000","product_name":"Amols product ","uploaded_by_name":"Amol Aher","uploaded_by_id":"57865efa416d6f056c070000","uploaded_in":"","uploaded_by_image":"","user_is_premium":0,"product_image":"grid/uploads/product_image/image_upload/5793cc88416d6f31ad010000/upload-image-2016-7-24-1-29.jpeg","product_description":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. ","bill_included":false,"min_bid_price":100.0,"buy_now_price":150.0,"latest_bid":0,"views_count":0,"bids_count":0,"comments_count":0,"images":["grid/uploads/product_image/image_upload/5793cc88416d6f31ad010000/upload-image-2016-7-24-1-29.jpeg"],"my_bid":0.0,"bid_closed":1,"bid_start":"","bid_end":"","rated_by_user":0,"ratings":0},{"id":"5793ce4d4
+ 
+ 
+ 
+{"status":1,"items":[{
+"id":"578bab7e7368610473000000",
+"name":"Good"},
+{"id":"578bab867368610473010000","name":"Very Good"},
+{"id":"578bab8c7368610473020000","name":"Bad"},
+{"id":"578bab907368610473030000","name":"Very Bad"},
+{"id":"578bab977368610473040000","name":"Medium"},{"id":"578bab9f7368610473050000","name":"Low"},{"id":"578baba27368610473060000","name":"Fair"}]}
+
+
+
+
+{"status":1,"api_key":"lFvESekr6rfVkhOypP1r7wtt"}
+
+
+{"status":1,"images_left":-3}
+
+
+{"status":1,"comments":[{"id":"578ea34e7368610214040000","user_name":"Eyup Tekbas","user_image":"grid/uploads/user/avatar/57866b0373686150e3000000/upload-image-2016-7-13-12-28.jpeg","created_at":"2016-07-19T22:01:50.782Z","user_location":"Sweden, Malmo","comment_text":"Hej "}],"total_pages":0}
+
+
+
+

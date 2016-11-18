@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/notifications_page_header"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/NAV_BAR_COLOR">
+        <ImageView
+            android:id="@+id/close_image"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/back_icon"
+            android:layout_margin="10dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true" />
+        <TextView
+            android:id="@+id/group_create_update"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="Create Group"
+            android:layout_centerInParent="true"
+            android:textColor="@color/WHITE_COLOR"/>
+        <TextView
+            android:id="@+id/create"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="@string/create"
+            android:layout_marginRight="10dp"
+            android:textColor="@color/WHITE_COLOR"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:visibility="invisible"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:visibility="visible"
+                android:id="@+id/group_image"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/blank_image"/>
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:id="@+id/open_group_select"
+                android:background="@drawable/white_back_button"
+                android:layout_width="match_parent"
+                android:layout_margin="10dp"
+                android:layout_height="50dp">
+                <LinearLayout
+                    android:gravity="center"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="9">
+                    <TextView
+                        android:paddingLeft="50dp"
+                        android:gravity="center"
+                        android:text="Open Group"
+                        android:textSize="15sp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+                    <ImageView
+                        android:id="@+id/open_group_tick"
+                        android:src="@drawable/true_icon"
+                        android:tint="@color/group_select_tick_color"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/closed_group_select"
+                android:background="@drawable/white_back_button"
+                android:layout_width="match_parent"
+                android:layout_margin="10dp"
+                android:layout_height="50dp">
+                <LinearLayout
+                    android:gravity="center"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="9">
+                    <TextView
+                        android:paddingLeft="50dp"
+                        android:gravity="center"
+                        android:text="Closed Group"
+                        android:textSize="15sp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+                    <ImageView
+                        android:id="@+id/closed_group_tick"
+                        android:src="@drawable/true_icon"
+                        android:tint="@color/group_select_tick_color"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/select_group_pic"
+            android:textAllCaps="false"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="@string/upload_picture"
+            android:textColor="@color/TEXT_FIELD_BACKGROUND"
+            android:textSize="15sp"
+            android:layout_margin="10dp"
+            android:paddingLeft="20dp"
+            android:background="@drawable/white_back_button"/>
+        <EditText
+            android:gravity="center"
+            android:id="@+id/group_name"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Group Name"
+            android:textSize="15sp"
+            android:layout_margin="10dp"
+            android:textColor="@color/TEXT_FIELD_BORDER"
+            android:paddingLeft="20dp"
+            android:background="@drawable/white_back_button"/>
+        <Button
+            android:id="@+id/group_update_btn"
+            android:visibility="gone"
+            android:textAllCaps="false"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="@string/update"
+            android:textColor="@color/TEXT_FIELD_BACKGROUND"
+            android:textSize="15sp"
+            android:layout_margin="10dp"
+            android:paddingLeft="20dp"
+            android:background="@drawable/white_back_button"/>
+    </LinearLayout>
+
+</LinearLayout>

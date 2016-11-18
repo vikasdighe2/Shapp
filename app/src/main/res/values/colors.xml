@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="MASTER_COLOR">#038875</color>
+    <color name="MASTER_COLOR_DARK">#202726</color>
+    <color name="colorAccent">#FD4270</color>
+
+    <color name="CREATE_ACC_BACKGROUND">#000000</color>
+    <color name="PINK_COLOR">#038875</color>
+    <color name="WHITE_COLOR">#FFFFFF</color>
+    <color name="BLACK_COLOR">#000000</color>
+    <color name="TEXT_FIELD_BACKGROUND">#858585</color>
+    <color name="TEXT_FIELD_BORDER">#cccccc</color>
+    <color name="WHITE_BACKGROUND">#F8F9F9</color>
+
+    <color name="INTRO_GRADIENT_ONE">#038875</color>
+    <color name="INTRO_GRADIENT_TWO">#013C34</color>
+    <color name="INTRO_GRADIENT_THREE">#2ECC71</color>
+    <color name="light_sky_blue">#C4E9ED</color>
+    <color name="sky_blue">#2BB9E6</color>
+    <color name="tinder_page_text_color">#202726</color>
+
+
+    <color name="NAV_BAR_COLOR">#202726</color>
+    <color name="TAB_BAR_COLOR">#F2F2F2</color>
+    <color name="TAB_BAR_SELECTED_COLOR">#038875</color>
+    <color name="TAB_BAR_UNSELECTED_ICON_TXET_COLOR">#202726</color>
+
+    <color name="PAGE_BACKGROUND_COLOR">#EDEDED</color>
+    <color name="grey_color">#E5E7E9</color>
+    <color name="CARD_DESC_BACKGROUND">#F2F2F2</color>
+    <color name="CARD_BOTTOM_BACKGROUND">#202726</color>
+
+    <color name="BID_NOW_COLOR">#00ff00</color>
+    <color name="CHAT_BACKGROUND">#F39C12</color>
+
+    <color name="primaryColor">#000000</color>
+    <color name="primaryColorDark">#FD4270</color>
+    <color name="colorTextPrimary">#fff</color>
+    <color name="colorTextSecondary">#fff</color>
+    <color name="chatColor">#5DADE2</color>
+    <color name="Red_color">#E74C3C</color>
+    <color name="ligh_orange">#F4511E</color>
+    <color name="left_drawer_text_color">#202726</color>
+    <color name="left_drawer_icon_color">#202726</color>
+    <color name="group_select_tick_color">#2ECC71</color>
+
+
+</resources>
+
+    <!--<resources>
+<color name="MASTER_COLOR">#9F1C55</color>
+<color name="MASTER_COLOR_DARK">#9F1C55</color>
+<color name="colorAccent">#FD4270</color>
+
+<color name="CREATE_ACC_BACKGROUND">#31304F</color>
+<color name="PINK_COLOR">#FFA100</color>
+<color name="WHITE_COLOR">#FFFFFF</color>
+<color name="BLACK_COLOR">#000000</color>
+<color name="TEXT_FIELD_BACKGROUND">#858585</color>
+<color name="TEXT_FIELD_BORDER">#cccccc</color>
+<color name="WHITE_BACKGROUND">#F8F9F9</color>
+
+<color name="INTRO_GRADIENT_ONE">#6563A4</color>
+<color name="INTRO_GRADIENT_TWO">#000000</color>
+<color name="INTRO_GRADIENT_THREE">#2ECC71</color>
+<color name="light_sky_blue">#C4E9ED</color>
+<color name="sky_blue">#2BB9E6</color>
+
+
+<color name="NAV_BAR_COLOR">#9F1C55</color>
+<color name="TAB_BAR_COLOR">#9F1C55</color>
+<color name="TAB_BAR_SELECTED_COLOR">#FD4270</color>
+
+<color name="PAGE_BACKGROUND_COLOR">#EDEDED</color>
+<color name="grey_color">#E5E7E9</color>
+<color name="CARD_DESC_BACKGROUND">#CB4959</color>
+<color name="CARD_BOTTOM_BACKGROUND">#9F1C55</color>
+
+<color name="BID_NOW_COLOR">#00ff00</color>
+<color name="CHAT_BACKGROUND">#F39C12</color>
+
+<color name="primaryColor">#000000</color>
+<color name="primaryColorDark">#FD4270</color>
+<color name="colorTextPrimary">#fff</color>
+<color name="colorTextSecondary">#fff</color>
+<color name="chatColor">#5DADE2</color>
+<color name="Red_color">#E74C3C</color>
+<color name="ligh_orange">#F4511E</color>
+<color name="left_drawer_text_color">#9F1C55</color>
+<color name="group_select_tick_color">#2ECC71</color>
+
+
+</resources> -->

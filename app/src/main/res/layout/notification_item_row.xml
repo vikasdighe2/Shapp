@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:layout_margin="10dp"
+        android:background="@color/WHITE_COLOR">
+
+
+        <TextView
+            android:id="@+id/noti_title_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:text="Push Notifikationer"
+            android:textStyle="bold"
+            android:textColor="@color/MASTER_COLOR"
+            />
+
+
+        <TextView
+            android:id="@+id/noti_time_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="10sp"
+            android:text="1 Hour ago"
+            android:textColor="@color/MASTER_COLOR_DARK"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="5dp"
+            android:background="@color/CARD_DESC_BACKGROUND"></LinearLayout>
+
+        
+        <TextView
+            android:id="@+id/noti_content_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/MASTER_COLOR_DARK"
+            android:text="demo"
+            />
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

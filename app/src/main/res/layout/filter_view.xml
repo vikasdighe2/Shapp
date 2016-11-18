@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/WHITE_COLOR">
+
+
+    <RelativeLayout
+        android:id="@+id/filter_page_header"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/NAV_BAR_COLOR">
+
+        <ImageView
+            android:id="@+id/filter_page_close_image"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/back_icon"
+            android:layout_margin="10dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"/>
+
+
+        <TextView
+            android:id="@+id/filter_page_header_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="Search Filters"
+            android:layout_centerInParent="true"
+            android:textColor="@color/WHITE_COLOR"/>
+
+
+    </RelativeLayout>
+
+
+
+    <com.eysa.shapp.BounceScrollView
+         android:layout_width="match_parent"
+         android:layout_height="match_parent">
+
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:orientation="vertical"
+             android:background="@color/TEXT_FIELD_BORDER">
+
+
+
+             <RelativeLayout
+                 android:id="@+id/all_button_row"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_marginBottom="1dp"
+                 android:orientation="horizontal"
+                 android:background="@color/WHITE_COLOR">
+
+                 <TextView
+                     android:id="@+id/all_text"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:text="All"
+                     android:textSize="15sp"
+                     android:padding="15dp"
+                     android:textColor="@color/MASTER_COLOR"/>
+
+                 <Switch
+                     android:id="@+id/all_switch"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:showText="false"
+                     android:textSize="15sp"
+                     android:theme="@style/AppTheme"
+                     android:layout_centerVertical="true"
+                     android:layout_alignParentRight="true"/>
+             </RelativeLayout>
+
+
+             <LinearLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:orientation="horizontal"
+                 android:layout_marginBottom="1dp"
+                 android:paddingTop="5dp"
+                 android:paddingBottom="5dp"
+                 android:background="@color/WHITE_COLOR">
+
+                 <TextView
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:text="Radius"
+                     android:textSize="15sp"
+                     android:padding="15dp"
+                     android:textColor="@color/MASTER_COLOR"/>
+
+
+                 <TextView
+                     android:id="@+id/radius_value_text"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:textSize="15sp"
+                     android:textColor="@color/MASTER_COLOR"/>
+
+                 <TextView
+                     android:id="@+id/radius_text"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:text="Km"
+                     android:textSize="15sp"
+                     android:textColor="@color/MASTER_COLOR"/>
+
+                 <SeekBar
+                     android:id="@+id/radius_seekbar"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:max="100"
+                     android:layout_gravity="center_vertical" />
+
+             </LinearLayout>
+
+
+             <LinearLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:orientation="horizontal"
+                 android:layout_marginBottom="1dp"
+                 android:background="@color/WHITE_COLOR">
+
+                 <TextView
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:text="Price Range"
+                     android:textSize="15sp"
+                     android:padding="15dp"
+                     android:textColor="@color/MASTER_COLOR"/>
+
+
+                 <EditText
+                     android:id="@+id/price_range_field"
+                     android:layout_width="100dp"
+                     android:layout_height="wrap_content"
+                     android:inputType="numberDecimal"
+                     android:padding="10dp"
+                     android:hint="0"
+                     android:background="@drawable/white_background"
+                     android:layout_margin="2dp"
+                     android:textColor="@color/MASTER_COLOR"/>
+
+                 <TextView
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:text="Kr"
+                     android:textColor="@color/MASTER_COLOR"/>
+
+
+             </LinearLayout>
+
+
+
+             <EditText
+                 android:id="@+id/search_category"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:inputType="datetime"
+                 android:textSize="15sp"
+                 android:textColor="@color/MASTER_COLOR"
+                 android:textColorHint="@color/MASTER_COLOR"
+                 android:hint="Select Category"
+                 android:padding="10dp"
+                 android:layout_margin="5dp"
+                 android:background="@drawable/settings_textfield"
+                 android:focusable="false"/>
+
+             <LinearLayout
+                 android:id="@+id/category_dropview"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:orientation="vertical"
+                 android:layout_margin="5dp"
+                 android:background="@color/MASTER_COLOR"
+                 android:visibility="gone">
+
+                 <TextView
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:text="Loading..."/>
+
+             </LinearLayout>
+         </LinearLayout>
+     </com.eysa.shapp.BounceScrollView>
+
+
+
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/PAGE_BACKGROUND_COLOR">
+
+
+
+    <RelativeLayout
+        android:id="@+id/group_details_page_header"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/NAV_BAR_COLOR">
+
+        <ImageView
+            android:id="@+id/group_details_page_close_image"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/back_icon"
+            android:layout_margin="10dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"/>
+
+
+        <TextView
+            android:id="@+id/group_details_page_header_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="Group Name"
+            android:layout_centerInParent="true"
+            android:textColor="@color/WHITE_COLOR"/>
+
+        <TextView
+            android:id="@+id/group_edit_btn"
+            android:visibility="gone"
+            android:text="@string/edit"
+            android:textSize="20sp"
+            android:textAllCaps="false"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:textColor="@color/WHITE_COLOR"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="270dp">
+    <ImageView
+        android:id="@+id/group_background"
+        android:layout_width="match_parent"
+        android:scaleType="fitXY"
+        android:layout_height="220dp" />
+    <Button
+        android:id="@+id/invite_btn"
+        android:visibility="visible"
+        android:text="@string/invite"
+        android:background="@drawable/invite_btn"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        android:textColor="@color/WHITE_COLOR"
+        android:layout_marginTop="150dp"
+        android:layout_marginRight="10dp"
+        android:layout_alignParentRight="true"
+        android:layout_width="80dp"
+        android:layout_height="40dp" />
+    <LinearLayout
+        android:layout_marginTop="60dp"
+        android:layout_marginLeft="20dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.eysa.shapp.CircleImageView
+            android:id="@+id/group_admin_image"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/blank_avatar"/>
+        <TextView
+            android:layout_marginTop="5dp"
+            android:id="@+id/admin_name"
+            android:text="Admin Name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/MASTER_COLOR"/>
+        <TextView
+            android:layout_marginTop="0dp"
+            android:id="@+id/admin_location"
+            android:text="Location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="@color/MASTER_COLOR"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+            <LinearLayout
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp">
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+
+                    <TableRow
+                        android:gravity="center_horizontal|center_vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_weight="0.33"
+                            android:paddingTop="5dp"
+                            android:paddingBottom="3dp"
+                            android:layout_marginLeft="1dp"
+                            >
+
+                            <TextView
+                                android:id="@+id/follow_count_count"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_horizontal"
+                                android:text="0"
+                                android:textColor="@color/TEXT_FIELD_BACKGROUND"/>
+
+                            <TextView
+                                android:id="@+id/followers_text"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_horizontal"
+                                android:textSize="11sp"
+                                android:text="@string/followers"
+                                android:textColor="@color/TEXT_FIELD_BACKGROUND"/>
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_weight="0.33"
+                            android:paddingTop="5dp"
+                            android:paddingBottom="3dp"
+                            >
+
+                            <TextView
+                                android:id="@+id/pro_count_text"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_horizontal"
+                                android:text="0"
+                                android:textColor="@color/TEXT_FIELD_BACKGROUND"/>
+
+                            <TextView
+                                android:id="@+id/products_text"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_horizontal"
+                                android:textSize="11sp"
+                                android:text="@string/product"
+                                android:textColor="@color/TEXT_FIELD_BACKGROUND"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_weight="0.33"
+                            android:paddingTop="5dp"
+                            android:layout_marginLeft="1dp"
+                            android:paddingBottom="3dp"
+                            >
+
+                            <TextView
+                                android:id="@+id/mem_count_text"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_horizontal"
+                                android:text="0"
+                                android:textColor="@color/TEXT_FIELD_BACKGROUND"/>
+
+                            <TextView
+                                android:id="@+id/members_text"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_horizontal"
+                                android:textSize="11sp"
+                                android:text="@string/members"
+                                android:textColor="@color/TEXT_FIELD_BACKGROUND"/>
+                        </LinearLayout>
+
+
+                    </TableRow>
+
+
+
+                </TableLayout>
+
+            </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="220dp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/WHITE_COLOR"/>
+
+        <LinearLayout
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TableRow
+                    android:gravity="center_horizontal|center_vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:visibility="gone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_weight="0.33">
+
+                        <TextView
+                            android:id="@+id/follower"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_horizontal"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            android:text="@string/followers"
+                            android:textColor="@color/TEXT_FIELD_BACKGROUND"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_weight="0.33">
+
+                        <TextView
+                            android:id="@+id/products"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_horizontal"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            android:text="@string/product"
+                            android:textColor="@color/TEXT_FIELD_BACKGROUND"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="1dp"
+                        android:layout_marginTop="2dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/WHITE_COLOR">
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_weight="0.33">
+                        <TextView
+                            android:id="@+id/members"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_horizontal"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            android:text="@string/members"
+                            android:textColor="@color/TEXT_FIELD_BACKGROUND"/>
+                    </LinearLayout>
+                </TableRow>
+            </TableLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="90dp"
+        android:layout_marginLeft="105dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/follo_unfollow"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/follow_icon"/>
+    </LinearLayout>
+</RelativeLayout>
+    <com.eysa.shapp.BounceScrollView
+        android:id="@+id/followersData_scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:id="@+id/followers_row_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+    </com.eysa.shapp.BounceScrollView>
+
+
+</LinearLayout>

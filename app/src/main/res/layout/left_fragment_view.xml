@@ -1,0 +1,371 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/drawer_page_layout"
+    android:background="@color/WHITE_COLOR">
+
+
+    <RelativeLayout
+        android:id="@+id/deft_drawer_header"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/NAV_BAR_COLOR">
+
+        <ImageView
+            android:id="@+id/left_drawer_close_button"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/exit_bitton"
+            android:layout_margin="10dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            />
+
+
+        <ImageView
+            android:id="@+id/left_drawer_header_image"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/header_logo"/>
+    </RelativeLayout>
+
+
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@color/NAV_BAR_COLOR"
+        >
+
+        <LinearLayout
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_alignParentBottom="true">
+
+            <com.eysa.shapp.CircleImageView
+                android:id="@+id/memberImage"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/blank_avatar"
+                android:background="@drawable/rounded_image_mask"
+                android:layout_gravity="center_horizontal" />
+
+            <TextView
+                android:id="@+id/username_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:layout_gravity="center_horizontal"
+                android:text="User Name"
+                android:textSize="15sp"
+                android:textColor="@color/WHITE_COLOR"
+                android:padding="10dp" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/add_pro_button"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:orientation="vertical"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_margin="10dp"
+            android:background="@drawable/rounded_corner_add_pro_box">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/camera_icon"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="5dp"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/WHITE_COLOR"
+                android:text="@string/sell"
+                android:textStyle="bold"
+                android:textAlignment="center"/>
+
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+
+
+
+
+
+    <com.eysa.shapp.BounceScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:id="@+id/drawer_separator_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:background="@color/CARD_DESC_BACKGROUND">
+
+
+
+                    <LinearLayout
+                        android:id="@+id/discover_button_row"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="1dp"
+                        android:background="@color/WHITE_COLOR">
+
+                        <ImageView
+                            android:id="@+id/discover_icon_image"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:src="@drawable/folder_icon"
+                            android:layout_margin="15dp"
+                            />
+
+                        <TextView
+                            android:id="@+id/discover_button_text"
+                            android:textColor="@color/left_drawer_text_color"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:text="@string/discover"
+                            android:textSize="15sp"
+                            android:padding="15dp" />
+
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/mybids_button_row"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="1dp"
+                        android:background="@color/WHITE_COLOR">
+
+                        <ImageView
+                            android:id="@+id/mybids_icon_image"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:src="@drawable/bid_icon"
+                            android:layout_margin="15dp"
+                            />
+
+                        <TextView
+                            android:id="@+id/mybids_button_text"
+                            android:textColor="@color/left_drawer_text_color"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:text="@string/my_bid"
+                            android:textSize="15sp"
+                            android:padding="15dp" />
+
+                    </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/mysales_button_row"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="1dp"
+                    android:background="@color/WHITE_COLOR">
+
+                    <ImageView
+                        android:id="@+id/mysales_icon_image"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/moneybag_icon"
+                        android:layout_margin="15dp"
+                        />
+
+                    <TextView
+                        android:id="@+id/mysales_button_text"
+                        android:textColor="@color/left_drawer_text_color"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="@string/my_sales"
+                        android:textSize="15sp"
+                        android:padding="15dp" />
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/followers_button_row"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="1dp"
+                    android:background="@color/WHITE_COLOR">
+
+                    <ImageView
+                        android:id="@+id/notifications_icon_image"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/followers_icon"
+                        android:layout_margin="15dp"
+                        />
+
+
+                    <TextView
+                        android:id="@+id/notifications_button_text"
+                        android:textColor="@color/left_drawer_text_color"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="@string/followers"
+                        android:textSize="15sp"
+                        android:padding="15dp" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/groups_button_row"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="1dp"
+                    android:background="@color/WHITE_COLOR">
+
+                    <ImageView
+                        android:id="@+id/groups_icon_image"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/chat_icon"
+                        android:layout_margin="15dp"
+                        />
+
+
+                    <TextView
+                        android:id="@+id/groups_button_text"
+                        android:textColor="@color/left_drawer_text_color"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="@string/chat"
+                        android:textSize="15sp"
+                        android:padding="15dp" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/chat_button_row"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="1dp"
+                    android:background="@color/WHITE_COLOR">
+
+                    <ImageView
+                        android:id="@+id/chat_icon_image"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/settings_icon"
+                        android:layout_margin="15dp"
+                        />
+
+
+                    <TextView
+                        android:id="@+id/chat_button_text"
+                        android:textColor="@color/left_drawer_text_color"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="@string/settings"
+                        android:textSize="15sp"
+                        android:padding="15dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/help_button_row"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="1dp"
+                    android:background="@color/WHITE_COLOR">
+
+                    <ImageView
+                        android:id="@+id/help_icon_image"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/help1"
+                        android:layout_margin="15dp"
+                        />
+
+
+                    <TextView
+                        android:id="@+id/help_button_text"
+                        android:textColor="@color/left_drawer_text_color"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="@string/help"
+                        android:textSize="15sp"
+                        android:padding="15dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/logout_button_row"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="1dp"
+                    android:background="@color/WHITE_COLOR">
+
+                    <ImageView
+                        android:id="@+id/logout_icon_image"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/logout_icon"
+                        android:layout_margin="15dp"
+                        />
+
+
+                    <TextView
+                        android:id="@+id/logout_button_text"
+                        android:textColor="@color/left_drawer_text_color"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="@string/logout"
+                        android:textSize="15sp"
+                        android:padding="15dp" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/version_text"
+                android:textColor="@color/left_drawer_text_color"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Version 1.0"
+                android:textSize="15sp"
+                android:padding="15dp"
+                android:layout_gravity="center_horizontal"/>
+
+        </LinearLayout>
+    </com.eysa.shapp.BounceScrollView>
+
+</LinearLayout>

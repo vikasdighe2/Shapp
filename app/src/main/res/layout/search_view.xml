@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/PAGE_BACKGROUND_COLOR">
+    <RelativeLayout
+        android:id="@+id/search_page_header"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/NAV_BAR_COLOR">
+
+        <ImageView
+            android:id="@+id/search_page_close_image"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/back_icon"
+            android:layout_margin="10dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"/>
+
+
+        <TextView
+            android:id="@+id/search_page_header_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="Search"
+            android:layout_centerInParent="true"
+            android:textColor="@color/WHITE_COLOR"/>
+
+
+        <ImageView
+            android:id="@+id/filter_control_button"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/filter_search"
+            android:layout_margin="10dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            />
+
+
+    </RelativeLayout>
+
+
+
+    <!-- Editext for Search -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/inputSearch_leftFragment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/search_products_groups"
+            android:background="@drawable/search_search_field"
+            android:textColorHint="@color/TEXT_FIELD_BORDER"
+            android:layout_centerHorizontal="true"
+            android:gravity="center_horizontal"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:cursorVisible="false"
+            android:textSize="15dp"
+            android:paddingRight="50dp"
+            android:paddingLeft="30dp"
+            />
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/search_item"
+            android:tint="@color/TEXT_FIELD_BACKGROUND"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            />
+        <ImageView
+            android:id="@+id/clearEditText"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/close_button"
+            android:tint="@color/TEXT_FIELD_BACKGROUND"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="15dp"
+            />
+    </RelativeLayout>
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+
+        <TableRow
+            android:gravity="center_horizontal|center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/search_tabs"
+            android:padding="1dp">
+
+            <RelativeLayout
+                android:id="@+id/tab_proudcts_button"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.33"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:background="@color/TEXT_FIELD_BORDER">
+
+
+                <TextView
+                    android:id="@+id/tab_products_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:textSize="12sp"
+                    android:text="@string/product"
+                    android:textColor="@color/WHITE_COLOR" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/tab_groups_button"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.33"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:background="@color/WHITE_COLOR"
+                android:layout_marginLeft="1dp"
+                android:layout_marginRight="1dp">
+
+
+                <TextView
+                    android:id="@+id/tab_groups_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:textSize="12sp"
+                    android:text="@string/groups"
+                    android:textColor="@color/TEXT_FIELD_BORDER" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/tab_people_button"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.33"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:background="@color/WHITE_COLOR">
+
+
+                <TextView
+                    android:id="@+id/tab_people_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:textSize="12sp"
+                    android:text="@string/people"
+                    android:textColor="@color/TEXT_FIELD_BORDER" />
+            </RelativeLayout>
+
+
+        </TableRow>
+
+
+
+    </TableLayout>
+
+    <com.eysa.shapp.BounceScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <LinearLayout
+                android:id="@+id/item_pages_container"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+            </LinearLayout>
+        </LinearLayout>
+
+    </com.eysa.shapp.BounceScrollView>
+
+
+</LinearLayout>

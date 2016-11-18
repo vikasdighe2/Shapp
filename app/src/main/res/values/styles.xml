@@ -1,0 +1,25 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/MASTER_COLOR</item>
+        <item name="colorPrimaryDark">@color/MASTER_COLOR_DARK</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+
+    <declare-styleable name="CircleImageView">
+        <attr name="civ_border_width" format="dimension" />
+        <attr name="civ_border_color" format="color" />
+        <attr name="civ_border_overlay" format="boolean" />
+        <attr name="civ_fill_color" format="color" />
+    </declare-styleable>
+
+    <style name="SwipeFling">
+        <item name="rotation_degrees">15</item>
+        <item name="min_adapter_stack">6</item>
+        <item name="max_visible">4</item>
+    </style>
+
+</resources>

@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/CREATE_ACC_BACKGROUND">
+
+
+
+
+    <RelativeLayout
+        android:id="@+id/rating_page_header"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/NAV_BAR_COLOR">
+
+        <ImageView
+            android:id="@+id/rating_page_close_image"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/back_icon"
+            android:layout_margin="10dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"/>
+
+
+        <TextView
+            android:id="@+id/rating_page_header_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="Star Rating"
+            android:layout_centerInParent="true"
+            android:textColor="@color/WHITE_COLOR"/>
+
+
+    </RelativeLayout>
+
+
+
+    <com.eysa.shapp.CircleImageView
+        android:id="@+id/rating_pro_image"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/blank_image"
+        android:background="@drawable/rounded_image_mask"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="10dp"/>
+
+
+    <TextView
+        android:id="@+id/product_name_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:textColor="@color/WHITE_COLOR"
+        android:text="Product Name"/>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="10dp">
+
+        <ImageView
+            android:id="@+id/star_1"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/star_empty"
+            android:layout_margin="5dp"
+            />
+
+        <ImageView
+            android:id="@+id/star_2"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/star_empty"
+            android:layout_margin="5dp"
+            />
+
+        <ImageView
+            android:id="@+id/star_3"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/star_empty"
+            android:layout_margin="5dp"
+            />
+
+        <ImageView
+            android:id="@+id/star_4"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/star_empty"
+            android:layout_margin="5dp"
+            />
+
+        <ImageView
+            android:id="@+id/star_5"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/star_empty"
+            android:layout_margin="5dp"
+            />
+
+
+
+
+
+
+    </LinearLayout>
+
+
+
+
+    <Button
+        android:id="@+id/rating_submit_button"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="Rate"
+        android:textSize="15sp"
+        android:textColor="@color/WHITE_COLOR"
+        android:padding="12dp"
+        android:background="@drawable/active_btn_filled"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp" />
+
+
+
+
+
+
+</LinearLayout>

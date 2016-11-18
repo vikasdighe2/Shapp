@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="1dp"
+        android:background="@color/TEXT_FIELD_BACKGROUND">
+
+        <TextView
+            android:id="@+id/dropdown_item_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="item 1"
+            android:textSize="15sp"
+            android:padding="15dp"
+            android:textColor="@color/WHITE_COLOR"/>
+
+    </RelativeLayout>
+
+</LinearLayout>
